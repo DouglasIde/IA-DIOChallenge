@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Douglas Yugo\\source\\repos\\ImageRecognition\\ImageRecognition\\ImageRecognition.csproj": {}
+    "C:\\Users\\Douglas Yugo\\Desktop\\dio-git\\ia-challenge\\ImageRecognition\\ImageRecognition\\ImageRecognition.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Douglas Yugo\\source\\repos\\ImageRecognition\\ImageRecognition\\ImageRecognition.csproj": {
+    "C:\\Users\\Douglas Yugo\\Desktop\\dio-git\\ia-challenge\\ImageRecognition\\ImageRecognition\\ImageRecognition.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Douglas Yugo\\source\\repos\\ImageRecognition\\ImageRecognition\\ImageRecognition.csproj",
+        "projectUniqueName": "C:\\Users\\Douglas Yugo\\Desktop\\dio-git\\ia-challenge\\ImageRecognition\\ImageRecognition\\ImageRecognition.csproj",
         "projectName": "ImageRecognition",
-        "projectPath": "C:\\Users\\Douglas Yugo\\source\\repos\\ImageRecognition\\ImageRecognition\\ImageRecognition.csproj",
+        "projectPath": "C:\\Users\\Douglas Yugo\\Desktop\\dio-git\\ia-challenge\\ImageRecognition\\ImageRecognition\\ImageRecognition.csproj",
         "packagesPath": "C:\\Users\\Douglas Yugo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Douglas Yugo\\source\\repos\\ImageRecognition\\ImageRecognition\\obj\\",
+        "outputPath": "C:\\Users\\Douglas Yugo\\Desktop\\dio-git\\ia-challenge\\ImageRecognition\\ImageRecognition\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,13 +50,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.Azure.CognitiveServices.Vision.ComputerVision": {
+            "System.Drawing.Common": {
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[8.0.8, )"
             },
-            "Newtonsoft.Json": {
+            "Tesseract": {
               "target": "Package",
-              "version": "[13.0.3, )"
+              "version": "[5.2.0, )"
+            },
+            "Tesseract.Drawing": {
+              "target": "Package",
+              "version": "[5.2.0, )"
             }
           },
           "imports": [
@@ -75,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
