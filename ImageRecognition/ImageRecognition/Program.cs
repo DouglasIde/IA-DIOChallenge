@@ -19,7 +19,6 @@ namespace OCRProgram
                     Console.WriteLine("Engine carregado com sucesso.");
                     using (var originalImage = new Bitmap(imagePath))
                     {
-                        // Ajuste de contraste, brilho e remoção de ruído
                         var adjustedImage = AdjustContrastAndBrightness(originalImage);
                         var processedImage = RemoveNoise(adjustedImage);
 
@@ -30,7 +29,6 @@ namespace OCRProgram
                             {
                                 string text = page.GetText();
                                 Console.WriteLine("Texto extraído: " + text);
-                                Console.WriteLine("Confiança média: " + page.GetMeanConfidence());
                             }
                         }
                     }
@@ -68,7 +66,7 @@ namespace OCRProgram
             using (var g = Graphics.FromImage(noiseRemovedImage))
             {
                 var attributes = new ImageAttributes();
-                attributes.SetThreshold(0.5f); // Ajuste o valor conforme necessário
+                attributes.SetThreshold(0.5f);
                 g.DrawImage(original, new Rectangle(0, 0, original.Width, original.Height), 0, 0, original.Width, original.Height, GraphicsUnit.Pixel, attributes);
             }
             return noiseRemovedImage;
